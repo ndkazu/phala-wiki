@@ -147,7 +147,6 @@ cargo +nightly-2020-10-01 build --release
 
 	```bash
 	# Build the core blockchain
-	cd phala-blockchain/
 	cargo build --release
 	```
 
@@ -155,7 +154,7 @@ Nous pouvons maintenant continuer avec la construction de pruntime:
 
 ```bash
 # Build pRuntime (TEE Enclave)
-cd ./pruntime/
+cd ./standalone/pruntime/
 SGX_MODE=SW make
 ```
 
